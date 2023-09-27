@@ -1,70 +1,90 @@
-# Getting Started with Create React App
+# React Todo App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A simple offline TODO app for the browser built using React JS.
 
-## Available Scripts
+## Key Features
 
-In the project directory, you can run:
+- A simple input bar to add Todo(s) on pressing the return key.
+- A list of TODO cards where each todo is appended on creation.
+- Clicking on a TODO card marks it as complete and moves it to the bottom of the list.
+- Active TODO cards appear in order of creation (most recent on top), while completed todo cards appear in order of completion (most recent on top).
+- A reset button on the top right corner of the App to clear all Todo(s) and return to the initial state.
+- The app works offline like a regular offline app even on hard refresh.
 
-### `npm start`
+## Demo
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+You can try out the Offline TODO App by visiting the live demo [here](https://akshay-todo-task.netlify.app/).
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Tech Stack Used
 
-### `npm test`
+- **React** - JavaScript library for building user interfaces.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Getting Started
 
-### `npm run build`
+### Prerequisites
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Node.js and npm installed on your machine.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Installation
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. Clone the repository:
 
-### `npm run eject`
+   ```bash
+   git clone https://github.com/akshay058/todo-task.git
+   ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+2. Change directory to the project folder:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+   ```bash
+   cd todo-task
+   ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+3. Install dependencies:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+   ```bash
+   npm install  # or yarn install
+   ```
 
-## Learn More
+4. Start development server:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+   ```bash
+   npm start   # or yarn run dev
+   ```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+5. Open [http://localhost:3000](http://localhost:3000/) in your favorite web browser!
 
-### Code Splitting
+### Folder Structure
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- src/: Contains the React application source code.
+- public/: Contains static assets and the HTML template.
 
-### Analyzing the Bundle Size
+### Customization
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- Modify the React components in the src/ directory to customize the app's behavior and appearance.
+- You can style the app by editing CSS or using a CSS framework like Bootstrap.
 
-### Making a Progressive Web App
+### Contributing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Contributions to the Offline TODO App are welcome! To contribute, follow these steps:
 
-### Advanced Configuration
+1. Fork the repository.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+2. Create a new branch for your feature or bug fix:
 
-### Deployment
+   ```bash
+    git checkout -b feature-name
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+3. Make your changes and commit them with descriptive commit messages.
 
-### `npm run build` fails to minify
+   ```bash
+   git add . && git commit -m "commit message"
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+4. Push your commits back up to GitHub:
+
+   ```bash
+   git push origin <branch name>
+   ```
+
+5. Submit a pull request through the GitHub website.
